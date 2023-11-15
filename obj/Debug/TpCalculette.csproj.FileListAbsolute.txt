@@ -1,0 +1,10 @@
+C:\Users\Adil\source\repos\TpCalculette\bin\Debug\TpCalculette.exe.config
+C:\Users\Adil\source\repos\TpCalculette\bin\Debug\TpCalculette.exe
+C:\Users\Adil\source\repos\TpCalculette\bin\Debug\TpCalculette.pdb
+C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.csproj.AssemblyReference.cache
+C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.Properties.Resources.resources
+C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.csproj.GenerateResource.cache
+C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.csproj.CoreCompileInputs.cache
+C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.exe
+C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.pdb
+C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.frmCalculette.resources
