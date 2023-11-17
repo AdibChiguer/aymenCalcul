@@ -8,3 +8,13 @@ C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.csproj.CoreCompil
 C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.exe
 C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.pdb
 C:\Users\Adil\source\repos\TpCalculette\obj\Debug\TpCalculette.frmCalculette.resources
+C:\Users\hp\Source\Repos\cs-AdibChiguer\bin\Debug\TpCalculette.exe.config
+C:\Users\hp\Source\Repos\cs-AdibChiguer\bin\Debug\TpCalculette.exe
+C:\Users\hp\Source\Repos\cs-AdibChiguer\bin\Debug\TpCalculette.pdb
+C:\Users\hp\Source\Repos\cs-AdibChiguer\obj\Debug\TpCalculette.csproj.AssemblyReference.cache
+C:\Users\hp\Source\Repos\cs-AdibChiguer\obj\Debug\TpCalculette.frmCalculette.resources
+C:\Users\hp\Source\Repos\cs-AdibChiguer\obj\Debug\TpCalculette.Properties.Resources.resources
+C:\Users\hp\Source\Repos\cs-AdibChiguer\obj\Debug\TpCalculette.csproj.GenerateResource.cache
+C:\Users\hp\Source\Repos\cs-AdibChiguer\obj\Debug\TpCalculette.csproj.CoreCompileInputs.cache
+C:\Users\hp\Source\Repos\cs-AdibChiguer\obj\Debug\TpCalculette.exe
+C:\Users\hp\Source\Repos\cs-AdibChiguer\obj\Debug\TpCalculette.pdb

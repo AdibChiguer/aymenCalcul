@@ -14,6 +14,7 @@ namespace TpCalculette
     {
         string op = "";
         string op1 = "";
+        bool isOpClicked = false;
         public frmCalculette()
         {
             InitializeComponent();
@@ -43,22 +44,11 @@ namespace TpCalculette
           //txtAffichage.Text=  e.X.ToString();
         }
 
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            txtAffichage.Text =btn8.Text;
-        }
-
         private void btnPlus_Click(object sender, EventArgs e)
         {
             op = "+";
             op1 = txtAffichage.Text;
         }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            txtAffichage.Text = btn5.Text;
-        }
-
         private void frmCalculette_KeyPress(object sender, KeyPressEventArgs e)
         {
             char c = e.KeyChar;
@@ -70,148 +60,115 @@ namespace TpCalculette
             //txtAffichage.Text += c;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button0_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAffichage_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-
+            txtAffichage.Text = button0.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
+            txtAffichage.Text += button1.Text;
         }
 
-        private void button24_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
-        }
-
-        private void button25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
+            txtAffichage.Text += button2.Text;
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
+            txtAffichage.Text += button3.Text;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
+            txtAffichage.Text += button4.Text;
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
+            txtAffichage.Text += button5.Text;
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
+            txtAffichage.Text += button6.Text; ;
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
+            txtAffichage.Text += button7.Text;
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
+            txtAffichage.Text += button8.Text;
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)
         {
+            if (!isOpClicked)
+            {
+                txtAffichage.Text = "";
+                isOpClicked = true;
+            }
 
+            txtAffichage.Text += button9.Text;
         }
 
-        private void button30_Click(object sender, EventArgs e)
+        private void plus_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
+            op = "+";
+            op1 = txtAffichage.Text;
 
         }
     }
