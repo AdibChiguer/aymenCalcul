@@ -38,19 +38,21 @@ namespace TpCalculette
             // 
             // txtAffichage
             // 
-            this.txtAffichage.Location = new System.Drawing.Point(484, 35);
+            this.txtAffichage.Location = new System.Drawing.Point(71, 185);
+            this.txtAffichage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAffichage.Name = "txtAffichage";
             this.txtAffichage.ReadOnly = true;
-            this.txtAffichage.Size = new System.Drawing.Size(100, 22);
+            this.txtAffichage.Size = new System.Drawing.Size(76, 20);
             this.txtAffichage.TabIndex = 0;
             this.txtAffichage.Text = "0";
             this.txtAffichage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAffichage_KeyPress);
             // 
             // btnCalculer
             // 
-            this.btnCalculer.Location = new System.Drawing.Point(343, 34);
+            this.btnCalculer.Location = new System.Drawing.Point(257, 28);
+            this.btnCalculer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCalculer.Name = "btnCalculer";
-            this.btnCalculer.Size = new System.Drawing.Size(125, 23);
+            this.btnCalculer.Size = new System.Drawing.Size(94, 19);
             this.btnCalculer.TabIndex = 1;
             this.btnCalculer.Text = "Calculer";
             this.btnCalculer.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@ namespace TpCalculette
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(34, 34);
+            this.btn8.Location = new System.Drawing.Point(21, 28);
+            this.btn8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(75, 23);
+            this.btn8.Size = new System.Drawing.Size(56, 19);
             this.btn8.TabIndex = 2;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@ namespace TpCalculette
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(243, 34);
+            this.btn5.Location = new System.Drawing.Point(182, 28);
+            this.btn5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(75, 23);
+            this.btn5.Size = new System.Drawing.Size(56, 19);
             this.btn5.TabIndex = 3;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
@@ -79,9 +83,10 @@ namespace TpCalculette
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(134, 34);
+            this.btnPlus.Location = new System.Drawing.Point(100, 28);
+            this.btnPlus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(75, 23);
+            this.btnPlus.Size = new System.Drawing.Size(63, 20);
             this.btnPlus.TabIndex = 4;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
@@ -89,14 +94,15 @@ namespace TpCalculette
             // 
             // frmCalculette
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(446, 492);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btnCalculer);
             this.Controls.Add(this.txtAffichage);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCalculette";
             this.Text = "Ma calculette";
             this.Load += new System.EventHandler(this.Form1_Load);
