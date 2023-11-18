@@ -41,7 +41,7 @@ namespace TpCalculette
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
             this.egal = new System.Windows.Forms.Button();
             this.division = new System.Windows.Forms.Button();
             this.multiplication = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@ namespace TpCalculette
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
+            this.cBtn = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
@@ -198,15 +198,16 @@ namespace TpCalculette
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button11
+            // deleteBtn
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button11.Location = new System.Drawing.Point(230, 128);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(70, 50);
-            this.button11.TabIndex = 15;
-            this.button11.Text = "DELETE";
-            this.button11.UseVisualStyleBackColor = false;
+            this.deleteBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.deleteBtn.Location = new System.Drawing.Point(230, 128);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(70, 50);
+            this.deleteBtn.TabIndex = 15;
+            this.deleteBtn.Text = "DELETE";
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // egal
             // 
@@ -218,6 +219,7 @@ namespace TpCalculette
             this.egal.TabIndex = 16;
             this.egal.Text = "=";
             this.egal.UseVisualStyleBackColor = false;
+            this.egal.Click += new System.EventHandler(this.egal_Click);
             // 
             // division
             // 
@@ -229,6 +231,7 @@ namespace TpCalculette
             this.division.TabIndex = 17;
             this.division.Text = "/";
             this.division.UseVisualStyleBackColor = false;
+            this.division.Click += new System.EventHandler(this.division_Click);
             // 
             // multiplication
             // 
@@ -240,6 +243,7 @@ namespace TpCalculette
             this.multiplication.TabIndex = 18;
             this.multiplication.Text = "x";
             this.multiplication.UseVisualStyleBackColor = false;
+            this.multiplication.Click += new System.EventHandler(this.multiplication_Click);
             // 
             // plus
             // 
@@ -263,6 +267,7 @@ namespace TpCalculette
             this.moin.TabIndex = 20;
             this.moin.Text = "-";
             this.moin.UseVisualStyleBackColor = false;
+            this.moin.Click += new System.EventHandler(this.moin_Click);
             // 
             // button17
             // 
@@ -340,15 +345,16 @@ namespace TpCalculette
             this.button23.Text = "%";
             this.button23.UseVisualStyleBackColor = false;
             // 
-            // button24
+            // cBtn
             // 
-            this.button24.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button24.Location = new System.Drawing.Point(154, 128);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(70, 50);
-            this.button24.TabIndex = 14;
-            this.button24.Text = "C";
-            this.button24.UseVisualStyleBackColor = false;
+            this.cBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cBtn.Location = new System.Drawing.Point(154, 128);
+            this.cBtn.Name = "cBtn";
+            this.cBtn.Size = new System.Drawing.Size(70, 50);
+            this.cBtn.TabIndex = 14;
+            this.cBtn.Text = "C";
+            this.cBtn.UseVisualStyleBackColor = false;
+            this.cBtn.Click += new System.EventHandler(this.cBtn_Click);
             // 
             // button25
             // 
@@ -425,8 +431,8 @@ namespace TpCalculette
             this.Controls.Add(this.button29);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.button27);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button24);
+            this.Controls.Add(this.deleteBtn);
+            this.Controls.Add(this.cBtn);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button25);
@@ -471,7 +477,7 @@ namespace TpCalculette
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.Button egal;
         private System.Windows.Forms.Button division;
         private System.Windows.Forms.Button multiplication;
@@ -484,7 +490,7 @@ namespace TpCalculette
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button cBtn;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;

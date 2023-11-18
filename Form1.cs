@@ -15,6 +15,7 @@ namespace TpCalculette
         string op = "";
         string op1 = "";
         bool isOpClicked = false;
+        string result = "";
         public frmCalculette()
         {
             InitializeComponent();
@@ -23,25 +24,6 @@ namespace TpCalculette
         private void Form1_Load(object sender, EventArgs e)
         {
            txtAffichage.TextAlign = HorizontalAlignment.Right;
-        }
-
-        private void btnCalculer_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                txtAffichage.Text = (int.Parse(txtAffichage.Text) + int.Parse(op1)).ToString();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-           
-        }
-
-        private void btnCalculer_MouseMove(object sender, MouseEventArgs e)
-        {
-          //txtAffichage.Text=  e.X.ToString();
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
@@ -62,114 +44,340 @@ namespace TpCalculette
 
         private void button0_Click(object sender, EventArgs e)
         {
-            txtAffichage.Text = button0.Text;
+            if (txtAffichage.Text == "0" || isOpClicked)
+            {
+                txtAffichage.Text = button0.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
+            }
+            else
+            {
+                txtAffichage.Text += button0.Text;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button1.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button1.Text;
+            else
+            {
+                txtAffichage.Text += button1.Text;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button2.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button2.Text;
-
+            else
+            {
+                txtAffichage.Text += button2.Text;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button3.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button3.Text;
+            else
+            {
+                txtAffichage.Text += button3.Text;
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button4.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button4.Text;
+            else
+            {
+                txtAffichage.Text += button4.Text;
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button5.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button5.Text;
+            else
+            {
+                txtAffichage.Text += button5.Text;
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button6.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button6.Text; ;
+            else
+            {
+                txtAffichage.Text += button6.Text;
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button7.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button7.Text;
+            else
+            {
+                txtAffichage.Text += button7.Text;
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button8.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button8.Text;
+            else
+            {
+                txtAffichage.Text += button8.Text;
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (!isOpClicked)
+            if (txtAffichage.Text == "0" || isOpClicked)
             {
-                txtAffichage.Text = "";
-                isOpClicked = true;
+                txtAffichage.Text = button9.Text;
+                isOpClicked = false;
+                switch (op)
+                {
+                    case "+":
+                        result = (int.Parse(op1) + int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "*":
+                        result = (int.Parse(op1) * int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "/":
+                        result = (int.Parse(op1) / int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                    case "-":
+                        result = (int.Parse(op1) - int.Parse(txtAffichage.Text)).ToString();
+                        break;
+                }
             }
-
-            txtAffichage.Text += button9.Text;
+            else
+            {
+                txtAffichage.Text += button9.Text;
+            }
         }
 
         private void plus_Click(object sender, EventArgs e)
         {
             op = "+";
             op1 = txtAffichage.Text;
+            isOpClicked = true;
+        }
 
+        private void moin_Click(object sender, EventArgs e)
+        {
+            op = "-";
+            op1 = txtAffichage.Text;
+            isOpClicked = true;
+        }
+
+        private void multiplication_Click(object sender, EventArgs e)
+        {
+            op = "*";
+            op1 = txtAffichage.Text;
+            isOpClicked = true;
+        }
+
+        private void division_Click(object sender, EventArgs e)
+        {
+            op = "/";
+            op1 = txtAffichage.Text;
+            isOpClicked = true;
+        }
+
+        private void egal_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtAffichage.Text = result;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            if (txtAffichage.Text.Length > 0)
+            {
+                txtAffichage.Text = txtAffichage.Text.Substring(0, txtAffichage.Text.Length - 1);
+            }
+        }
+
+        private void cBtn_Click(object sender, EventArgs e)
+        {
+            txtAffichage.Text = "0";
+            op = "";
+            op1 = "";
+            isOpClicked = false;
         }
     }
 }
