@@ -45,15 +45,14 @@ namespace TpCalculette
             this.egal = new System.Windows.Forms.Button();
             this.division = new System.Windows.Forms.Button();
             this.multiplication = new System.Windows.Forms.Button();
-            this.plus = new System.Windows.Forms.Button();
             this.moin = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
+            this.dotBtn = new System.Windows.Forms.Button();
+            this.nigatifBtn = new System.Windows.Forms.Button();
+            this.twoSubBtn = new System.Windows.Forms.Button();
+            this.sqrtBtn = new System.Windows.Forms.Button();
+            this.divisionSur1Bnt = new System.Windows.Forms.Button();
+            this.ceBtn = new System.Windows.Forms.Button();
+            this.moduloBtn = new System.Windows.Forms.Button();
             this.cBtn = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
@@ -61,27 +60,41 @@ namespace TpCalculette
             this.button28 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
+            this.plus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtAffichage
             // 
+            this.txtAffichage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAffichage.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtAffichage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAffichage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAffichage.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtAffichage.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAffichage.Location = new System.Drawing.Point(4, 11);
             this.txtAffichage.Margin = new System.Windows.Forms.Padding(2);
             this.txtAffichage.Name = "txtAffichage";
             this.txtAffichage.ReadOnly = true;
             this.txtAffichage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtAffichage.Size = new System.Drawing.Size(297, 61);
+            this.txtAffichage.Size = new System.Drawing.Size(297, 68);
             this.txtAffichage.TabIndex = 0;
             this.txtAffichage.Text = "0";
+            this.txtAffichage.TextChanged += new System.EventHandler(this.txtAffichage_TextChanged);
             this.txtAffichage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAffichage_KeyPress);
             // 
             // button0
             // 
-            this.button0.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button0.BackColor = System.Drawing.Color.Gainsboro;
+            this.button0.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button0.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button0.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button0.Location = new System.Drawing.Point(78, 408);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(70, 50);
@@ -92,8 +105,16 @@ namespace TpCalculette
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Location = new System.Drawing.Point(2, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 50);
@@ -104,8 +125,16 @@ namespace TpCalculette
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.Gainsboro;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button2.Location = new System.Drawing.Point(78, 352);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 50);
@@ -116,8 +145,16 @@ namespace TpCalculette
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.Gainsboro;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button3.Location = new System.Drawing.Point(154, 352);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 50);
@@ -128,8 +165,16 @@ namespace TpCalculette
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.Gainsboro;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button4.Location = new System.Drawing.Point(3, 296);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(70, 50);
@@ -140,8 +185,16 @@ namespace TpCalculette
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.BackColor = System.Drawing.Color.Gainsboro;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button5.Location = new System.Drawing.Point(78, 296);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(70, 50);
@@ -152,8 +205,16 @@ namespace TpCalculette
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackColor = System.Drawing.Color.Gainsboro;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button6.Location = new System.Drawing.Point(154, 296);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(70, 50);
@@ -164,8 +225,16 @@ namespace TpCalculette
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.Color.Gainsboro;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button7.Location = new System.Drawing.Point(3, 240);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(70, 50);
@@ -176,8 +245,16 @@ namespace TpCalculette
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.Gainsboro;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button8.Location = new System.Drawing.Point(79, 240);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(70, 50);
@@ -188,8 +265,16 @@ namespace TpCalculette
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.BackColor = System.Drawing.Color.Gainsboro;
+            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button9.Location = new System.Drawing.Point(154, 240);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(70, 50);
@@ -200,7 +285,15 @@ namespace TpCalculette
             // 
             // deleteBtn
             // 
-            this.deleteBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.deleteBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.deleteBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.deleteBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.deleteBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.deleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.deleteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.deleteBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.deleteBtn.Location = new System.Drawing.Point(230, 128);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(70, 50);
@@ -211,8 +304,16 @@ namespace TpCalculette
             // 
             // egal
             // 
-            this.egal.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.egal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.egal.BackColor = System.Drawing.Color.Gainsboro;
+            this.egal.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.egal.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.egal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.egal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.egal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.egal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.egal.Location = new System.Drawing.Point(230, 408);
             this.egal.Name = "egal";
             this.egal.Size = new System.Drawing.Size(70, 50);
@@ -223,8 +324,16 @@ namespace TpCalculette
             // 
             // division
             // 
-            this.division.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.division.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.division.BackColor = System.Drawing.Color.Gainsboro;
+            this.division.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.division.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.division.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.division.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.division.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.division.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.division.Location = new System.Drawing.Point(230, 184);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(70, 50);
@@ -235,8 +344,16 @@ namespace TpCalculette
             // 
             // multiplication
             // 
-            this.multiplication.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.multiplication.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.multiplication.BackColor = System.Drawing.Color.Gainsboro;
+            this.multiplication.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.multiplication.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.multiplication.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.multiplication.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.multiplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.multiplication.Location = new System.Drawing.Point(230, 240);
             this.multiplication.Name = "multiplication";
             this.multiplication.Size = new System.Drawing.Size(70, 50);
@@ -245,22 +362,18 @@ namespace TpCalculette
             this.multiplication.UseVisualStyleBackColor = false;
             this.multiplication.Click += new System.EventHandler(this.multiplication_Click);
             // 
-            // plus
-            // 
-            this.plus.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plus.Location = new System.Drawing.Point(230, 352);
-            this.plus.Name = "plus";
-            this.plus.Size = new System.Drawing.Size(70, 50);
-            this.plus.TabIndex = 19;
-            this.plus.Text = "+";
-            this.plus.UseVisualStyleBackColor = false;
-            this.plus.Click += new System.EventHandler(this.plus_Click);
-            // 
             // moin
             // 
-            this.moin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.moin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.moin.BackColor = System.Drawing.Color.Gainsboro;
+            this.moin.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.moin.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.moin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.moin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.moin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.moin.Location = new System.Drawing.Point(230, 296);
             this.moin.Name = "moin";
             this.moin.Size = new System.Drawing.Size(70, 50);
@@ -269,85 +382,156 @@ namespace TpCalculette
             this.moin.UseVisualStyleBackColor = false;
             this.moin.Click += new System.EventHandler(this.moin_Click);
             // 
-            // button17
+            // dotBtn
             // 
-            this.button17.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(154, 408);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(70, 50);
-            this.button17.TabIndex = 5;
-            this.button17.Text = ".";
-            this.button17.UseVisualStyleBackColor = false;
+            this.dotBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dotBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dotBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.dotBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.dotBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.dotBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.dotBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dotBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dotBtn.Location = new System.Drawing.Point(154, 408);
+            this.dotBtn.Name = "dotBtn";
+            this.dotBtn.Size = new System.Drawing.Size(70, 50);
+            this.dotBtn.TabIndex = 5;
+            this.dotBtn.Text = ".";
+            this.dotBtn.UseVisualStyleBackColor = false;
+            this.dotBtn.Click += new System.EventHandler(this.dotBtn_Click);
             // 
-            // button18
+            // nigatifBtn
             // 
-            this.button18.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(2, 408);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(70, 50);
-            this.button18.TabIndex = 21;
-            this.button18.Text = "+/-";
-            this.button18.UseVisualStyleBackColor = false;
+            this.nigatifBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nigatifBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.nigatifBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.nigatifBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.nigatifBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.nigatifBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.nigatifBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nigatifBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.nigatifBtn.Location = new System.Drawing.Point(2, 408);
+            this.nigatifBtn.Name = "nigatifBtn";
+            this.nigatifBtn.Size = new System.Drawing.Size(70, 50);
+            this.nigatifBtn.TabIndex = 21;
+            this.nigatifBtn.Text = "+/-";
+            this.nigatifBtn.UseVisualStyleBackColor = false;
+            this.nigatifBtn.Click += new System.EventHandler(this.nigatifBtn_Click);
             // 
-            // button19
+            // twoSubBtn
             // 
-            this.button19.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(78, 184);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(70, 50);
-            this.button19.TabIndex = 14;
-            this.button19.Text = "x^2";
-            this.button19.UseVisualStyleBackColor = false;
+            this.twoSubBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.twoSubBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.twoSubBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.twoSubBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.twoSubBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.twoSubBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.twoSubBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.twoSubBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.twoSubBtn.Location = new System.Drawing.Point(78, 184);
+            this.twoSubBtn.Name = "twoSubBtn";
+            this.twoSubBtn.Size = new System.Drawing.Size(70, 50);
+            this.twoSubBtn.TabIndex = 14;
+            this.twoSubBtn.Text = "x^2";
+            this.twoSubBtn.UseVisualStyleBackColor = false;
+            this.twoSubBtn.Click += new System.EventHandler(this.twoSubBtn_Click);
             // 
-            // button20
+            // sqrtBtn
             // 
-            this.button20.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(154, 184);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(70, 50);
-            this.button20.TabIndex = 14;
-            this.button20.Text = "sqrt(x)";
-            this.button20.UseVisualStyleBackColor = false;
+            this.sqrtBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sqrtBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.sqrtBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.sqrtBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.sqrtBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.sqrtBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.sqrtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sqrtBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.sqrtBtn.Location = new System.Drawing.Point(154, 184);
+            this.sqrtBtn.Name = "sqrtBtn";
+            this.sqrtBtn.Size = new System.Drawing.Size(70, 50);
+            this.sqrtBtn.TabIndex = 14;
+            this.sqrtBtn.Text = "sqrt(x)";
+            this.sqrtBtn.UseVisualStyleBackColor = false;
+            this.sqrtBtn.Click += new System.EventHandler(this.sqrtBtn_Click);
             // 
-            // button21
+            // divisionSur1Bnt
             // 
-            this.button21.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(3, 184);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(70, 50);
-            this.button21.TabIndex = 14;
-            this.button21.Text = "1/x";
-            this.button21.UseVisualStyleBackColor = false;
+            this.divisionSur1Bnt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.divisionSur1Bnt.BackColor = System.Drawing.Color.Gainsboro;
+            this.divisionSur1Bnt.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.divisionSur1Bnt.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.divisionSur1Bnt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.divisionSur1Bnt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.divisionSur1Bnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divisionSur1Bnt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.divisionSur1Bnt.Location = new System.Drawing.Point(3, 184);
+            this.divisionSur1Bnt.Name = "divisionSur1Bnt";
+            this.divisionSur1Bnt.Size = new System.Drawing.Size(70, 50);
+            this.divisionSur1Bnt.TabIndex = 14;
+            this.divisionSur1Bnt.Text = "1/x";
+            this.divisionSur1Bnt.UseVisualStyleBackColor = false;
+            this.divisionSur1Bnt.Click += new System.EventHandler(this.divisionSur1Bnt_Click);
             // 
-            // button22
+            // ceBtn
             // 
-            this.button22.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button22.Location = new System.Drawing.Point(78, 128);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(70, 50);
-            this.button22.TabIndex = 14;
-            this.button22.Text = "CE";
-            this.button22.UseVisualStyleBackColor = false;
+            this.ceBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ceBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ceBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ceBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.ceBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.ceBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.ceBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ceBtn.Location = new System.Drawing.Point(78, 128);
+            this.ceBtn.Name = "ceBtn";
+            this.ceBtn.Size = new System.Drawing.Size(70, 50);
+            this.ceBtn.TabIndex = 14;
+            this.ceBtn.Text = "CE";
+            this.ceBtn.UseVisualStyleBackColor = false;
+            this.ceBtn.Click += new System.EventHandler(this.ceBtn_Click);
             // 
-            // button23
+            // moduloBtn
             // 
-            this.button23.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(3, 128);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(70, 50);
-            this.button23.TabIndex = 14;
-            this.button23.Text = "%";
-            this.button23.UseVisualStyleBackColor = false;
+            this.moduloBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.moduloBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.moduloBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.moduloBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.moduloBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.moduloBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.moduloBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moduloBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.moduloBtn.Location = new System.Drawing.Point(3, 128);
+            this.moduloBtn.Name = "moduloBtn";
+            this.moduloBtn.Size = new System.Drawing.Size(70, 50);
+            this.moduloBtn.TabIndex = 14;
+            this.moduloBtn.Text = "%";
+            this.moduloBtn.UseVisualStyleBackColor = false;
+            this.moduloBtn.Click += new System.EventHandler(this.moduloBtn_Click);
             // 
             // cBtn
             // 
-            this.cBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.cBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.cBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.cBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.cBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cBtn.Location = new System.Drawing.Point(154, 128);
             this.cBtn.Name = "cBtn";
             this.cBtn.Size = new System.Drawing.Size(70, 50);
@@ -358,7 +542,15 @@ namespace TpCalculette
             // 
             // button25
             // 
-            this.button25.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button25.BackColor = System.Drawing.Color.White;
+            this.button25.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button25.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button25.Location = new System.Drawing.Point(3, 88);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(46, 34);
@@ -368,7 +560,15 @@ namespace TpCalculette
             // 
             // button26
             // 
-            this.button26.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button26.BackColor = System.Drawing.Color.White;
+            this.button26.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button26.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button26.Location = new System.Drawing.Point(53, 88);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(46, 34);
@@ -378,7 +578,15 @@ namespace TpCalculette
             // 
             // button27
             // 
-            this.button27.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button27.BackColor = System.Drawing.Color.White;
+            this.button27.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button27.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button27.Location = new System.Drawing.Point(103, 88);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(46, 34);
@@ -388,7 +596,15 @@ namespace TpCalculette
             // 
             // button28
             // 
-            this.button28.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button28.BackColor = System.Drawing.Color.White;
+            this.button28.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button28.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button28.Location = new System.Drawing.Point(154, 88);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(46, 34);
@@ -398,7 +614,15 @@ namespace TpCalculette
             // 
             // button29
             // 
-            this.button29.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button29.BackColor = System.Drawing.Color.White;
+            this.button29.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button29.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button29.Location = new System.Drawing.Point(204, 88);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(46, 34);
@@ -408,7 +632,15 @@ namespace TpCalculette
             // 
             // button30
             // 
-            this.button30.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button30.BackColor = System.Drawing.Color.White;
+            this.button30.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button30.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button30.Location = new System.Drawing.Point(254, 88);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(46, 34);
@@ -416,14 +648,30 @@ namespace TpCalculette
             this.button30.Text = "M";
             this.button30.UseVisualStyleBackColor = false;
             // 
+            // plus
+            // 
+            this.plus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.plus.BackColor = System.Drawing.Color.Gainsboro;
+            this.plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plus.Location = new System.Drawing.Point(230, 352);
+            this.plus.Name = "plus";
+            this.plus.Size = new System.Drawing.Size(70, 50);
+            this.plus.TabIndex = 22;
+            this.plus.Text = "+";
+            this.plus.UseVisualStyleBackColor = false;
+            this.plus.Click += new System.EventHandler(this.plus_Click);
+            // 
             // frmCalculette
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(303, 464);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.moin);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(304, 461);
             this.Controls.Add(this.plus);
+            this.Controls.Add(this.nigatifBtn);
+            this.Controls.Add(this.moin);
             this.Controls.Add(this.multiplication);
             this.Controls.Add(this.division);
             this.Controls.Add(this.egal);
@@ -434,12 +682,12 @@ namespace TpCalculette
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.cBtn);
             this.Controls.Add(this.button26);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.sqrtBtn);
             this.Controls.Add(this.button25);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button22);
-            this.Controls.Add(this.button21);
-            this.Controls.Add(this.button19);
+            this.Controls.Add(this.moduloBtn);
+            this.Controls.Add(this.ceBtn);
+            this.Controls.Add(this.divisionSur1Bnt);
+            this.Controls.Add(this.twoSubBtn);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -449,13 +697,17 @@ namespace TpCalculette
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button17);
+            this.Controls.Add(this.dotBtn);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.txtAffichage);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(320, 500);
+            this.MinimumSize = new System.Drawing.Size(320, 500);
             this.Name = "frmCalculette";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "MyCalculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmCalculette_KeyPress);
@@ -481,15 +733,14 @@ namespace TpCalculette
         private System.Windows.Forms.Button egal;
         private System.Windows.Forms.Button division;
         private System.Windows.Forms.Button multiplication;
-        private System.Windows.Forms.Button plus;
         private System.Windows.Forms.Button moin;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button dotBtn;
+        private System.Windows.Forms.Button nigatifBtn;
+        private System.Windows.Forms.Button twoSubBtn;
+        private System.Windows.Forms.Button sqrtBtn;
+        private System.Windows.Forms.Button divisionSur1Bnt;
+        private System.Windows.Forms.Button ceBtn;
+        private System.Windows.Forms.Button moduloBtn;
         private System.Windows.Forms.Button cBtn;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
@@ -497,6 +748,7 @@ namespace TpCalculette
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button plus;
     }
 }
 
