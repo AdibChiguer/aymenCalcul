@@ -33,11 +33,6 @@ namespace TpCalculette
             op1 = txtAffichage.Text;
         }
 
-        private void frmCalculette_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            char c = e.KeyChar;
-        }
-
         private void txtAffichage_KeyPress(object sender, KeyPressEventArgs e)
         {
             //string c = e.KeyChar.ToString();
@@ -524,6 +519,148 @@ namespace TpCalculette
         {
             txtAffichage.Text = "0";
             isOpClicked = false;
+            result = "";
         }
+
+
+        // handling the press events 
+        private void frmCalculette_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char keyPressed = e.KeyChar;
+
+            // Handle numeric keys
+            if (char.IsDigit(keyPressed))
+            {
+                HandleNumericKeyPress(keyPressed);
+            }
+            // Handle operator keys
+            else if (IsOperator(keyPressed))
+            {
+                HandleOperatorKeyPress(keyPressed);
+            }
+            // Handle equal key
+            else if (keyPressed == '=' || keyPressed == '\r')
+            {
+                egal_Click(sender, e);
+            }
+            // Handle clear entry key
+            else if (keyPressed == 'c' || keyPressed == 'C')
+            {
+                cBtn_Click(sender, e);
+            }
+        }
+
+        private void HandleNumericKeyPress(char key)
+        {
+            if (txtAffichage.Text == "0" || isOpClicked || txtAffichage.Text == "Invalid input" || txtAffichage.Text == "Error")
+            {
+                txtAffichage.Text = key.ToString();
+                isOpClicked = false;
+                Console.Write(txtAffichage.Text);
+            }
+            else
+            {
+                txtAffichage.Text += key;
+                Console.Write(txtAffichage.Text);
+            }
+        }
+
+        private void HandleOperatorKeyPress(char key)
+        {
+            switch (key)
+            {
+                case '+':
+                    plus_Click(this, EventArgs.Empty);
+                    break;
+                case '-':
+                    moin_Click(this, EventArgs.Empty);
+                    break;
+                case '*':
+                    multiplication_Click(this, EventArgs.Empty);
+                    break;
+                case '/':
+                    division_Click(this, EventArgs.Empty);
+                    break;
+                case '%':
+                    moduloBtn_Click(this, EventArgs.Empty);
+                    break;
+            }
+        }
+
+        private bool IsOperator(char key)
+        {
+            return key == '+' || key == '-' || key == '*' || key == '/' || key == '%';
+        }
+
+
+        // handling the key down events
+        // ...
+
+        private void frmCalculette_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Handle numeric keys
+            if (e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9)
+            {
+                HandleNumericKeyPress(e.KeyCode);
+            }
+            // Handle operator keys
+            else if (IsOperator(e.KeyCode))
+            {
+                HandleOperatorKeyPress(e.KeyCode);
+            }
+            // Handle equal key
+            else if (e.KeyCode == Keys.Enter)
+            {
+                egal_Click(sender, EventArgs.Empty);
+            }
+            // Handle clear entry key
+            else if (e.KeyCode == Keys.C)
+            {
+                cBtn_Click(sender, EventArgs.Empty);
+            }
+        }
+
+        private void HandleNumericKeyPress(Keys key)
+        {
+            char numericKey = (char)('0' + (key - Keys.D0));
+
+            if (txtAffichage.Text == "0" || isOpClicked || txtAffichage.Text == "Invalid input" || txtAffichage.Text == "Error")
+            {
+                txtAffichage.Text = numericKey.ToString();
+                isOpClicked = false;
+            }
+            else
+            {
+                txtAffichage.Text += numericKey;
+            }
+        }
+
+        private void HandleOperatorKeyPress(Keys key)
+        {
+            switch (key)
+            {
+                case Keys.Add:
+                    plus_Click(this, EventArgs.Empty);
+                    break;
+                case Keys.Subtract:
+                    moin_Click(this, EventArgs.Empty);
+                    break;
+                case Keys.Multiply:
+                    multiplication_Click(this, EventArgs.Empty);
+                    break;
+                case Keys.Divide:
+                    division_Click(this, EventArgs.Empty);
+                    break;
+                case Keys.Modifiers:
+                    moduloBtn_Click(this, EventArgs.Empty);
+                    break;
+            }
+        }
+
+        private bool IsOperator(Keys key)
+        {
+            return key == Keys.Add || key == Keys.Subtract || key == Keys.Multiply || key == Keys.Divide || key == Keys.Modifiers;
+        }
+
     }
 }

@@ -72,13 +72,14 @@ namespace TpCalculette
             this.txtAffichage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAffichage.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtAffichage.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAffichage.Location = new System.Drawing.Point(4, 11);
+            this.txtAffichage.Location = new System.Drawing.Point(3, 15);
             this.txtAffichage.Margin = new System.Windows.Forms.Padding(2);
             this.txtAffichage.Name = "txtAffichage";
             this.txtAffichage.ReadOnly = true;
             this.txtAffichage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtAffichage.Size = new System.Drawing.Size(297, 68);
             this.txtAffichage.TabIndex = 0;
+            this.txtAffichage.TabStop = false;
             this.txtAffichage.Text = "0";
             this.txtAffichage.TextChanged += new System.EventHandler(this.txtAffichage_TextChanged);
             this.txtAffichage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAffichage_KeyPress);
@@ -99,6 +100,7 @@ namespace TpCalculette
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(70, 50);
             this.button0.TabIndex = 5;
+            this.button0.TabStop = false;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = false;
             this.button0.Click += new System.EventHandler(this.button0_Click);
@@ -119,6 +121,7 @@ namespace TpCalculette
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 50);
             this.button1.TabIndex = 6;
+            this.button1.TabStop = false;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -139,6 +142,7 @@ namespace TpCalculette
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 50);
             this.button2.TabIndex = 7;
+            this.button2.TabStop = false;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -159,6 +163,7 @@ namespace TpCalculette
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 50);
             this.button3.TabIndex = 8;
+            this.button3.TabStop = false;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -179,6 +184,7 @@ namespace TpCalculette
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(70, 50);
             this.button4.TabIndex = 9;
+            this.button4.TabStop = false;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -199,6 +205,7 @@ namespace TpCalculette
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(70, 50);
             this.button5.TabIndex = 10;
+            this.button5.TabStop = false;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -219,6 +226,7 @@ namespace TpCalculette
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(70, 50);
             this.button6.TabIndex = 11;
+            this.button6.TabStop = false;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -239,6 +247,7 @@ namespace TpCalculette
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(70, 50);
             this.button7.TabIndex = 12;
+            this.button7.TabStop = false;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -259,6 +268,7 @@ namespace TpCalculette
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(70, 50);
             this.button8.TabIndex = 13;
+            this.button8.TabStop = false;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -279,6 +289,7 @@ namespace TpCalculette
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(70, 50);
             this.button9.TabIndex = 14;
+            this.button9.TabStop = false;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
@@ -298,6 +309,7 @@ namespace TpCalculette
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(70, 50);
             this.deleteBtn.TabIndex = 15;
+            this.deleteBtn.TabStop = false;
             this.deleteBtn.Text = "DELETE";
             this.deleteBtn.UseVisualStyleBackColor = false;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
@@ -318,6 +330,7 @@ namespace TpCalculette
             this.egal.Name = "egal";
             this.egal.Size = new System.Drawing.Size(70, 50);
             this.egal.TabIndex = 16;
+            this.egal.TabStop = false;
             this.egal.Text = "=";
             this.egal.UseVisualStyleBackColor = false;
             this.egal.Click += new System.EventHandler(this.egal_Click);
@@ -338,6 +351,7 @@ namespace TpCalculette
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(70, 50);
             this.division.TabIndex = 17;
+            this.division.TabStop = false;
             this.division.Text = "/";
             this.division.UseVisualStyleBackColor = false;
             this.division.Click += new System.EventHandler(this.division_Click);
@@ -358,6 +372,7 @@ namespace TpCalculette
             this.multiplication.Name = "multiplication";
             this.multiplication.Size = new System.Drawing.Size(70, 50);
             this.multiplication.TabIndex = 18;
+            this.multiplication.TabStop = false;
             this.multiplication.Text = "x";
             this.multiplication.UseVisualStyleBackColor = false;
             this.multiplication.Click += new System.EventHandler(this.multiplication_Click);
@@ -378,6 +393,7 @@ namespace TpCalculette
             this.moin.Name = "moin";
             this.moin.Size = new System.Drawing.Size(70, 50);
             this.moin.TabIndex = 20;
+            this.moin.TabStop = false;
             this.moin.Text = "-";
             this.moin.UseVisualStyleBackColor = false;
             this.moin.Click += new System.EventHandler(this.moin_Click);
@@ -398,6 +414,7 @@ namespace TpCalculette
             this.dotBtn.Name = "dotBtn";
             this.dotBtn.Size = new System.Drawing.Size(70, 50);
             this.dotBtn.TabIndex = 5;
+            this.dotBtn.TabStop = false;
             this.dotBtn.Text = ".";
             this.dotBtn.UseVisualStyleBackColor = false;
             this.dotBtn.Click += new System.EventHandler(this.dotBtn_Click);
@@ -418,6 +435,7 @@ namespace TpCalculette
             this.nigatifBtn.Name = "nigatifBtn";
             this.nigatifBtn.Size = new System.Drawing.Size(70, 50);
             this.nigatifBtn.TabIndex = 21;
+            this.nigatifBtn.TabStop = false;
             this.nigatifBtn.Text = "+/-";
             this.nigatifBtn.UseVisualStyleBackColor = false;
             this.nigatifBtn.Click += new System.EventHandler(this.nigatifBtn_Click);
@@ -438,6 +456,7 @@ namespace TpCalculette
             this.twoSubBtn.Name = "twoSubBtn";
             this.twoSubBtn.Size = new System.Drawing.Size(70, 50);
             this.twoSubBtn.TabIndex = 14;
+            this.twoSubBtn.TabStop = false;
             this.twoSubBtn.Text = "x^2";
             this.twoSubBtn.UseVisualStyleBackColor = false;
             this.twoSubBtn.Click += new System.EventHandler(this.twoSubBtn_Click);
@@ -458,6 +477,7 @@ namespace TpCalculette
             this.sqrtBtn.Name = "sqrtBtn";
             this.sqrtBtn.Size = new System.Drawing.Size(70, 50);
             this.sqrtBtn.TabIndex = 14;
+            this.sqrtBtn.TabStop = false;
             this.sqrtBtn.Text = "sqrt(x)";
             this.sqrtBtn.UseVisualStyleBackColor = false;
             this.sqrtBtn.Click += new System.EventHandler(this.sqrtBtn_Click);
@@ -478,6 +498,7 @@ namespace TpCalculette
             this.divisionSur1Bnt.Name = "divisionSur1Bnt";
             this.divisionSur1Bnt.Size = new System.Drawing.Size(70, 50);
             this.divisionSur1Bnt.TabIndex = 14;
+            this.divisionSur1Bnt.TabStop = false;
             this.divisionSur1Bnt.Text = "1/x";
             this.divisionSur1Bnt.UseVisualStyleBackColor = false;
             this.divisionSur1Bnt.Click += new System.EventHandler(this.divisionSur1Bnt_Click);
@@ -497,6 +518,7 @@ namespace TpCalculette
             this.ceBtn.Name = "ceBtn";
             this.ceBtn.Size = new System.Drawing.Size(70, 50);
             this.ceBtn.TabIndex = 14;
+            this.ceBtn.TabStop = false;
             this.ceBtn.Text = "CE";
             this.ceBtn.UseVisualStyleBackColor = false;
             this.ceBtn.Click += new System.EventHandler(this.ceBtn_Click);
@@ -517,6 +539,7 @@ namespace TpCalculette
             this.moduloBtn.Name = "moduloBtn";
             this.moduloBtn.Size = new System.Drawing.Size(70, 50);
             this.moduloBtn.TabIndex = 14;
+            this.moduloBtn.TabStop = false;
             this.moduloBtn.Text = "%";
             this.moduloBtn.UseVisualStyleBackColor = false;
             this.moduloBtn.Click += new System.EventHandler(this.moduloBtn_Click);
@@ -536,6 +559,7 @@ namespace TpCalculette
             this.cBtn.Name = "cBtn";
             this.cBtn.Size = new System.Drawing.Size(70, 50);
             this.cBtn.TabIndex = 14;
+            this.cBtn.TabStop = false;
             this.cBtn.Text = "C";
             this.cBtn.UseVisualStyleBackColor = false;
             this.cBtn.Click += new System.EventHandler(this.cBtn_Click);
@@ -659,6 +683,7 @@ namespace TpCalculette
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(70, 50);
             this.plus.TabIndex = 22;
+            this.plus.TabStop = false;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = false;
             this.plus.Click += new System.EventHandler(this.plus_Click);
@@ -710,6 +735,7 @@ namespace TpCalculette
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "MyCalculator";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCalculette_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmCalculette_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
