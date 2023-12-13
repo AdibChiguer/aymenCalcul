@@ -72,7 +72,7 @@ namespace TpCalculette
             this.txtAffichage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAffichage.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtAffichage.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAffichage.Location = new System.Drawing.Point(3, 15);
+            this.txtAffichage.Location = new System.Drawing.Point(3, 11);
             this.txtAffichage.Margin = new System.Windows.Forms.Padding(2);
             this.txtAffichage.Name = "txtAffichage";
             this.txtAffichage.ReadOnly = true;
@@ -735,8 +735,7 @@ namespace TpCalculette
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "MyCalculator";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCalculette_KeyDown);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmCalculette_KeyPress);
+            this.Shown += new System.EventHandler(this.frmCalculette_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
